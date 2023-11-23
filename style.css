@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navegacion{
+    background-color: rgb(204, 0, 255);
+    
+}
+h1{
+    text-indent: 2rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.tarjetas{
+    width: 400px;
+    background-color: blueviolet;
+    margin: 20px;
+    padding: 20px;
+}
+.cabecera{
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+li{
+    text-align: right;
+}
+img{
+    width: 300px;
+    text-align: center;
+}
+.pie-de-pagina{
+    background-color: darkgrey;
+    margin: 15px;
+    padding: 15px;
+}
