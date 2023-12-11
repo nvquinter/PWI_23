@@ -9,13 +9,15 @@ body{
     background-color:lavenderblush ;
     font-family: 'Josefin Sans', sans-serif;
 }
-.fas {
-    font-size: 1.2em;
-}
+
+/*header*/
+
 .navbar{
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
+    border: 1px solid gainsboro;
 }
 .logo{
    height: 60px;
@@ -27,7 +29,7 @@ body{
     display: flex;
 }
 ul li{
-    margin-right: 3em;
+    margin-right: 6em;
     list-style: none;
 }
 
@@ -40,19 +42,29 @@ li a{
     grid-column: 11/12;
     justify-content: flex-end;
     cursor: pointer;
-  }
+}
 .menu-bar{
     display: none
 }
+.fas{
+    font-size: 1.2em;
+}
 
-h2 {
+/*main*/
+.productos{
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid gainsboro;
+}
+h2{
     position: absolute;
     left: 300px;
     top: 300px;
     z-index: 1;
     font-size: 50px;
     padding: 25px;
-  }
+}
 .enlaceProductos{
     text-decoration: none;
     list-style: none;
@@ -67,7 +79,6 @@ h2 {
     border: solid;
     background-color: red;
     color: white;
-
 }
 .contenedor{
     display: grid;
@@ -80,8 +91,9 @@ h2 {
     height: 530px;
     background-color: beige;
     color: black;
-    border: 1px solid grey; 
+    border: 1px solid gainsboro; 
     padding: 20px;
+    margin: 20px;
     font-size: 150%;
 }
 .tarjetas img{
@@ -109,7 +121,39 @@ p{
     color: black;
     font-weight: 20px;
 }
+
+/*footer*/
+
+footer{
+    padding: 30px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border: 1px solid gainsboro;
+}
 .fa-instagram{
-    font-size:48px;
-    color:red;
+    font-size:80px;
+    color: dimgrey;
+}
+.fa{
+    font-size:80px;
+    color: dimgrey;
+}
+footer h4{
+    color: dimgrey;
+    font-size: 40px;
+}
+footer p{
+ color: dimgrey;
+ font-size: 25px;
+}
+
+h4{
+    grid-column: 2/3;
+}
+footer p{
+    grid-column: 9/10;
+}
+.redes {
+    grid-column: 11/12;
 }
