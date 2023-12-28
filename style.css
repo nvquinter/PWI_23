@@ -17,13 +17,11 @@ body{
     margin: 20px;
 }
 
-/*main con grid*/
 .productos{
     width: 1200px;
     height: 600px;
     padding: 20px;
     margin: 20px;
-    text-align: center;
     border: 1px solid gainsboro;
 }
 .productos img{
@@ -32,7 +30,7 @@ body{
 }
 h2{
     position: absolute;
-    left: 300px;
+    left: 450px;
     top: 300px;
     z-index: 1;
     font-size: 50px;
@@ -53,21 +51,29 @@ h2{
     background-color: red;
     color: white;
 }
+
+/* main con grid*/
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
 .contenedor{
+    width: 1200px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 10px;
-    padding: 20px
+    grid-template-columns: repeat(2,1fr); 
+    row-gap: 20px;
+    column-gap: 20px;
 }
 .tarjetas{
-    width: 400px;
+    width: 100%;
     background-color: beige;
     color: black;
     border: 1px solid gainsboro; 
     padding: 20px;
     margin: 20px;
     font-size: 150%;
-
+    justify-self: center; 
 }
 .tarjetas img{
     width: 100%;
@@ -76,7 +82,7 @@ h2{
     text-decoration: none;
     list-style: none;
     position: relative;
-    left: 250px;
+    left: 400px;
     bottom: 20px;
     font-size: 20px;
     padding: 10px;
@@ -111,7 +117,7 @@ p{
 }
 .side{
     flex: 70%;
-    /* padding: 20px; */
+
 }
 .side img{
     width: 70%;
@@ -156,11 +162,68 @@ margin-right: 10px;
 font-size:30px;
 }
 
-/*media queries archivo agenda*/
-@media screen and (max-width:700px){
+/*media queries*/
+@media  (max-width:800px){
+    /*archivo agenda*/
+    .row{
+        flex-direction: column;
+    }
+    .productos{
+        width: 700px;
+    }
+    h2{
+        left: 200px;
+        top: 250px;
+    }
+    .enlaceProductos{
+        left: 300px;
+        bottom: 50px;
+        z-index: 1;
+        font-size: 15px;
+        padding: 15px;
+   
+    }
+    /*main */
+    .contenedor{
+        width: 600px;
+    }
+    .boton{
+        left: 100px;
+        bottom: 10px;
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+@media  (max-width:500px){
+    /*archivo agenda*/
     .row{
         flex-direction: column;
     }
 
+    .productos{
+        width: 400px;
+    }
+    h2{
+        left: 100px;
+        top: 250px;
+    }
+    .enlaceProductos{
+        left: 115px;
+        bottom: 50px;
+        z-index: 1;
+        font-size: 15px;
+        padding: 15px;
+   
+    }
+    /*main */
+    .contenedor{
+        width: 400px;
+        grid-template-columns: 1fr; 
+    }
+    .boton{
+        left: 250px;
+        bottom: 15px;
+        font-size: 15px;
+        padding: 20px;
+    }
 }
-
