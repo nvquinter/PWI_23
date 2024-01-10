@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:lavenderblush ;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    padding: 35px;
+    margin: 30px;
+}
+.contacto{
+    color: whitesmoke;
+    background-color: rgb(218, 169, 169);
+    display: block;
+    border-radius: 30px;
+    font-size: 1.9em;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 56.5px 20px;
+    opacity: 1 !important;
+}
+main{
+    padding: 30px;
+    margin: 30px;
+}
+form{
+	width:700px;
+	padding:20px;
+    margin: 30px;
+	border-radius:10px;
+	margin:auto;
+	background-color:rgb(194, 162, 162);
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:400px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+footer {
+    background-color: black;
+    color: dimgrey;  
+    padding: 20px;
+    }
+    .contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .social-icons {   
+        display: flex;
+    }
+    .fa {   
+    margin-right: 10px;
+    font-size:30px;
+    }
+
