@@ -45,9 +45,8 @@ form label{
 	display:inline-block;
 }
 
-form input[type="text"],
-form input[type="email"]{
-	width:400px;
+.inputText{
+    width:400px;
 	padding:3px 10px;
 	border:1px solid #f6f6f6;
 	border-radius:3px;
@@ -56,8 +55,8 @@ form input[type="email"]{
 	display:inline-block;
 }
 
-form input[type="submit"]{
-	width:100%;
+#botonEnviar{
+    width:100%;
 	padding:8px 16px;
 	margin-top:32px;
 	border:1px solid #000;
@@ -65,8 +64,7 @@ form input[type="submit"]{
 	display:block;
 	color:#fff;
 	background-color:#000;
-} 
-
+}
 
 textarea{
 	width:100%;
@@ -83,17 +81,17 @@ footer {
     background-color: black;
     color: dimgrey;  
     padding: 20px;
-    }
-    .contenedor-footer {
+}
+.contenedor-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
-    .social-icons {   
-        display: flex;
-    }
-    .fa {   
+}
+.social-icons {   
+    display: flex;
+}
+.fa {   
     margin-right: 10px;
     font-size:30px;
-    }
+}
 
