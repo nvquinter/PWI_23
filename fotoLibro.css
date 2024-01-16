@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:lavenderblush ;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.imgLibro{
+    width: 90%;
+    height: 90%;
+}
+.mainLibro{
+    padding: 50px;
+    margin: 50px;
+}
+.botons{
+    text-decoration: none;
+    list-style: none;
+    bottom: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    float: right;
+}
+.parrafo{
+   text-align: center;
+   font-size: 20px;
+}
+ol li{
+    list-style: none;
+    padding: 0;
+}
+li::before {
+    content: "\2022";
+    padding-right: 8px;
+}
+
+/*footer*/
+footer {
+background-color: black;
+color: dimgrey;  
+padding: 20px;
+}
+footer p{
+    color: dimgrey;
+}
+.contenedor-footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.social-icons {   
+    display: flex;
+}
+.fa {   
+margin-right: 10px;
+font-size:30px;
+}

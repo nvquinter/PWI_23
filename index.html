@@ -16,66 +16,69 @@
     <title>Mi Proyecto</title>
 </head>
 <body>
-  <div class="container">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">FotoPrinT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">FotoPrinT</h5>
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
+            </div>
                 <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="./agenda.html">AGENDAS</a></li>
-                            <li><a class="dropdown-item" href="./calendario.html">CALENDARIO</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <!-- pagina contacto -->
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                        <!-- en proceso -->
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                            <!-- pagina agenda -->
+                                <li><a class="dropdown-item" href="./agenda.html">Agenda</a></li>
+                                            <!-- pagina foto libro -->
+                                <li><a class="dropdown-item" href="./fotoLibro.html">Foto Libro Mama</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            </div>
-        </nav>
-    </div>
-
-        <div class="productos">
-            <img src="./imagenes/7525.jpg" alt="album fotos">
-            <!-- enlace a todos los productos... en preceso -->
-            <a href="#" class="enlaceProductos">Descubre Nuestros Productos</a>
         </div>
+    </nav>
+  
+
+    <header  class="bienvenida">
+        <h1>Bienvenidos a FotoPrinT</h1>
+            <!-- enlace a todos los productos... en preceso -->
+        <a href="#" class="enlaceProductos">Descubre Nuestros Productos</a>
+    </header>
 
     <main>
         <section class="contenedor">
-                <div class="tarjetas">
-                    <h3>Agenda</h3>
-                    <img src="./imagenes/7953.jpg" alt="agenda">
-                    <p>$2400</p>
-                    <a href="./agenda.html" class="boton">¡Lo Quiero!</a>
-                </div>
-                <div class="tarjetas">
-                    <h3>Calendario</h3>
-                    <img src="./imagenes/calendario.jpg" alt="calendario">
-                    <p>$6000</p>
-                    <a href="./calendario.html" class="boton">¡Lo Quiero!</a>
-                </div>
+            <div class="tarjetas">
+                <h2>Agenda</h2>
+                <img src="./imagenes/7953.jpg" alt="agenda">
+                <p>$24000</p>
+                <a href="./agenda.html" class="boton">¡Lo Quiero!</a>
+            </div>
+            <div class="tarjetas">
+                <h2>Libro Mama</h2>
+                <img src="./imagenes/fotolibro.jpg" alt="calendario">
+                <p>$29000</p>
+                <a href="./fotoLibro.html" class="boton">¡Lo Quiero!</a>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="contenedor-footer">
             <div>
-                <h4>FotoPrinT</h4>
+                <p class="h5">FotoPrinT</p>
             </div>
             <div class="social-icons">
                 <i class="fa fa-instagram"></i>

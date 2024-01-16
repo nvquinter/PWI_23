@@ -9,32 +9,22 @@ body{
     background-color:lavenderblush ;
     font-family: 'Josefin Sans', sans-serif;
 }
-
-/*header*/
-.header{
-    height: 20px;
-    padding: 20px;
-    margin: 20px;
-}
-
-.productos{
+/* header */
+.bienvenida{
+    background-image: url("./imagenes/7525.jpg");
+    background-size: cover;
+    color: crimson;
+    text-align: center;
     width: 1200px;
     height: 600px;
     padding: 30px;
-    margin: 30px;
+    margin: 30px; 
     border: 1px solid gainsboro;
 }
-.productos img{
-    width: 100%;
-    height: 100%;
-}
-.productos h1{
-    position: absolute;
-    left: 450px;
-    top: 300px;
-    z-index: 1;
-    font-size: 50px;
-    padding: 25px;
+.bienvenida h1{
+    font-weight: bold;
+    position: relative;
+    top: 200px;
 }
 .enlaceProductos{
     text-decoration: none;
@@ -42,22 +32,17 @@ body{
     color: black;
     cursor: pointer;
     position: absolute;
-    left: 500px;
-    bottom: 100px;
+    left: 455px;
+    bottom: 200px;
     z-index: 1;
     font-size: 25px;
     padding: 25px;
-    border: solid;
+    border-radius:15px;
     background-color: red;
     color: white;
 }
 
-/* main con grid*/
-main{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
+/* main */
 .contenedor{
     width: 1200px;
     display: grid;
@@ -78,6 +63,16 @@ main{
 .tarjetas img{
     width: 100%;
 }
+h2{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 35px;
+}
+p{
+    color: black;
+    font-weight: 20px;
+}
 .boton{
     text-decoration: none;
     list-style: none;
@@ -90,86 +85,15 @@ main{
     background-color: red;
     color: white;
 }
-h3{
-    text-align: center;
-    padding: 10px;
-    font-size: 35px;
-}
-p{
-    color: black;
-    font-weight: 20px;
-}
 
-/* archivo agenda con flexbox*/
-.tituloAgenda{
-    text-align: center;
-    font-size: 25px;
-    background-color: beige;
-    color: black;
-    border: 1px solid gainsboro;
-}
-.row{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid gainsboro;
-}
-.side{
-    flex: 70%;
-
-}
-.side img{
-    width: 70%;
-    height: 70%;
-}
-.main{
- flex: 30%;
-}
-.fakeimg p{
-    padding: 20px;
-}
-
-/*Archivo calendario con bootstrap*/
-
-.imgCalendario{
-    width: 90%;
-    height: 90%;
-}
-.mainCalendario{
-    padding: 50px;
-    margin: 50px;
-}
-.botons{
-    text-decoration: none;
-    list-style: none;
-    bottom: 20px;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: red;
-    color: white;
-    float: right;
-}
-.parrafo{
-   text-align: center;
-   font-size: 20px;
-}
-ol li{
-    list-style: none;
-    padding: 0;
-}
-li::before {
-    content: "\2022";
-    padding-right: 8px;
-    
-}
-
-/*footer con flexbox*/
+/*footer*/
 footer {
 background-color: black;
 color: dimgrey;  
 padding: 20px;
+}
+footer p{
+    color: dimgrey;
 }
 .contenedor-footer {
 display: flex;
@@ -187,28 +111,17 @@ font-size:30px;
 
 /*media queries*/
 @media  (max-width:800px){
-    /*archivo agenda*/
-    .row{
-        flex-direction: column;
+    .bienvenida{
+        display: none;
     }
-    .productos{
-        width: 700px;
-    }
+    
     h2{
         left: 200px;
         top: 250px;
     }
-    .enlaceProductos{
-        left: 300px;
-        bottom: 50px;
-        z-index: 1;
-        font-size: 15px;
-        padding: 15px;
-   
-    }
-    /*main */
     .contenedor{
-        width: 600px;
+        width: 500px;
+        grid-template-columns: repeat(1,1fr); 
     }
     .boton{
         left: 100px;
@@ -218,33 +131,16 @@ font-size:30px;
     }
 }
 @media  (max-width:500px){
-    /*archivo agenda*/
-    .row{
-        flex-direction: column;
-    }
-
-    .productos{
-        width: 400px;
-    }
     h2{
         left: 100px;
         top: 250px;
     }
-    .enlaceProductos{
-        left: 115px;
-        bottom: 50px;
-        z-index: 1;
-        font-size: 15px;
-        padding: 15px;
-   
-    }
-    /*main */
     .contenedor{
-        width: 400px;
+        width: 350px;
         grid-template-columns: 1fr; 
     }
     .boton{
-        left: 250px;
+        left: 150px;
         bottom: 15px;
         font-size: 15px;
         padding: 20px;
