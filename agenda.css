@@ -22,7 +22,7 @@ main{
     justify-content: center;
     padding-top: 20px;
 }
-.row{
+.contenedor-div{
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -89,12 +89,12 @@ footer p{
 }
 
 @media  (max-width:800px){
-    .row{
+    .contenedor-div{
         flex-direction: column;
     }
 }
 @media  (max-width:500px){
-    .row{
+    .contenedor-div{
         flex-direction: column;
     }
 }
